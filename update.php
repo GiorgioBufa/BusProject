@@ -3,8 +3,12 @@
 error_reporting(E_ALL | E_STRICT);
 ini_set('display_errors', true);
 require('requires/db.php');
-
 // Take the value
+<<<<<<< HEAD:update.php
+
+$newCapacity = $_POST['busMaxCapacity'];
+$freeSeats = $newCapacity;
+=======
 $peopleOnBus = 0;
 $newCapacity = $_POST['busMaxCapacity'];
 $peopleGettingOff = $_POST['numberOfPeopleGettingOff'];
@@ -56,6 +60,7 @@ $peopleGettingOn = $_POST['numberOfPeopleGettingOn'];
     }
 
 
+>>>>>>> origin/master:script.php
 
 // Connect to DB
 $connection = mysqli_connect($host, $username, $password, $database);
@@ -65,10 +70,17 @@ $connection = mysqli_connect($host, $username, $password, $database);
     die("Connection failed: " . mysqli_connect_error());
 	}
 
+
+	$takenSeats = $newCapacity - $freeSeats;
 // Start the query
+<<<<<<< HEAD:update.php
+	$query = "UPDATE bus SET capacity = $newCapacity, freeSeats = $newCapacity, takenSeats = $takenSeats"; // INITIALIZE
+
+=======
 	$query = "UPDATE bus SET capacity = $newCapacity"; // UPDATE
 	$query = "UPDATE bus SET currentLoad = $totalAmountOfPeople";
+>>>>>>> origin/master:script.php
 // Run the query
 	mysqli_query($connection, $query);
-	
 ?>
+

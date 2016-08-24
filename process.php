@@ -1,14 +1,21 @@
-<?php
+<?php 
+<<<<<<< HEAD
+<<<<<<< HEAD
+	$peopleOnBus = 0;
+	$peopleGettingOff = $_POST['numberOfPeopleGettingOff']; //0
+	$peopleGettingOn = $_POST['numberOfPeopleGettingOn']; //15
+=======
+=======
+>>>>>>> origin/master
 
-error_reporting(E_ALL | E_STRICT);
-ini_set('display_errors', true);
-require('requires/db.php');
 
-// Take the value
-$peopleOnBus = 0;
-$newCapacity = $_POST['busMaxCapacity'];
-$peopleGettingOff = $_POST['numberOfPeopleGettingOff'];
-$peopleGettingOn = $_POST['numberOfPeopleGettingOn'];
+	$peopleOnBus = 0;
+	$peopleGettingOff = $_POST['numberOfPeopleGettingOff'];
+	$peopleGettingOn = $_POST['numberOfPeopleGettingOn'];
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
+>>>>>>> origin/master
 
 //Process
     
@@ -27,6 +34,13 @@ $peopleGettingOn = $_POST['numberOfPeopleGettingOn'];
     else
     {
         // Question 1: Capacity is less than total people
+<<<<<<< HEAD
+<<<<<<< HEAD
+        
+=======
+>>>>>>> origin/master
+=======
+>>>>>>> origin/master
         if ($totalAmountOfPeople > $newCapacity)
         {
             $difference = $totalAmountOfPeople - $newCapacity;
@@ -55,20 +69,7 @@ $peopleGettingOn = $_POST['numberOfPeopleGettingOn'];
  
     }
 
-
-
-// Connect to DB
-$connection = mysqli_connect($host, $username, $password, $database);
-
-	if (!$connection)
-	{
-    die("Connection failed: " . mysqli_connect_error());
-	}
-
-// Start the query
-	$query = "UPDATE bus SET capacity = $newCapacity"; // UPDATE
 	$query = "UPDATE bus SET currentLoad = $totalAmountOfPeople";
-// Run the query
-	mysqli_query($connection, $query);
-	
+
+
 ?>

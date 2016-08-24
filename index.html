@@ -8,28 +8,29 @@
 		<body>
 			<form id="busForm">
 				
-				Bus Max Capacity: <input required type="number" id="busMaxCapacity" placeholder="Max Bus Capacity">
+				Bus Max Capacity: <input type="number" id="busMaxCapacity" placeholder="Max Bus Capacity">
 				<br>
 				<br>
-				<button id="setBusCapacity">Set Bus Capacity</button> <span id="newCapacity"></span>
+				<button id="setBusCapacity">Engage!</button> <span id="newCapacity"></span>
 				<br>
 				<br>
 				Bus Stop
 				<br>
 				<br>
-				Number of People Getting On: <input type="number" id = "numberOfPeopleGettingOn">
+				Number of People Getting On: <input type="number" id = "numberOfPeopleGettingOn"><button id="getOnBus">Get On Bus</button>
 				<br>
-				Number of People Getting Off: <input type="number" id = "numberOfPeopleGettingOff">
+				Number of People Getting Off: <input type="number" id = "numberOfPeopleGettingOff"><button id="getOffBus">Take Off Bus</button>
 				<br>
 				<br>
-				<input type="submit" id="update" value="Update">
+				<span id="newAmount"></span>
 			</form>
 			<br>
 			<br>
+			<p>Bus Current Taken Seats: <span id="takenSeats"></span> </p>
 			<br>
 			<p>Bus Current Free Seats: <span id="freeSeats"></span> </p> 
 			<br>
-			<p>Bus Current Taken Seats: <span id="takenSeats"></span> </p>
+			
 			<br>
 			<p>Bus Driver: <span id="comment"></span> </p>
 		</body>
