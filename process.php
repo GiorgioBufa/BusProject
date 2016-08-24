@@ -1,10 +1,13 @@
 <?php 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$peopleOnBus = 0;
 	$peopleGettingOff = $_POST['numberOfPeopleGettingOff']; //0
 	$peopleGettingOn = $_POST['numberOfPeopleGettingOn']; //15
 =======
+=======
+>>>>>>> origin/master
 =======
 >>>>>>> origin/master
 
@@ -13,6 +16,9 @@
 	$peopleGettingOff = $_POST['numberOfPeopleGettingOff'];
 	$peopleGettingOn = $_POST['numberOfPeopleGettingOn'];
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 =======
 >>>>>>> origin/master
@@ -36,7 +42,10 @@
         // Question 1: Capacity is less than total people
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         
+=======
+>>>>>>> origin/master
 =======
 >>>>>>> origin/master
 =======
