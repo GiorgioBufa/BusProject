@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Bus Capacity Game</title>
+		<script src="jquery.js"></script>
+		<script src="app.js"></script>
+	</head>
+		<body>
+			<form id="busForm">
+				
+				Bus Max Capacity: <input required type="number" id = "busMaxCapacity" placeholder="Max Bus Capacity">
+				<br>
+				<br>
+				<input type="submit" id="setBusCapacity" value="Set Bus Capacity">
+				<br>
+				<br>
+				Bus Stop
+				<br>
+				<br>
+				Number of People Getting On: <input required type="number" id = "numberOfPeopleGettingOn">
+				<br>
+				Number of People Getting Off: <input required type="number" id = "numberOfPeopleGettingOff">
+				<br>
+				<br>
+				<input type="submit" id="update" value="Update">
+			</form>
+			<br>
+			<br>
+			<br>
+			<p>Bus Current Free Seats: <span id="freeSeats"></span> </p> 
+			<br>
+			<p>Bus Current Taken Seats: <span id="takenSeats"></span> </p>
+			<br>
+			<p>Bus Driver: <span id="comment"></span> </p>
+		</body>
+</html>
