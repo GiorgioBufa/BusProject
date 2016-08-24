@@ -1,6 +1,6 @@
 <?php
 
-$host = 'hostname';
+$host = 'localhost';
 $username = 'root';
 $password = 'root';
 $database = 'busProject';
