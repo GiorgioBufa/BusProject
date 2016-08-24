@@ -13,9 +13,26 @@ $(function(){
 		})
 		.done(function(response){
 			$("#newCapacity").html(response);
+			$("#freeSeats").html(busMaxCapacity);
 			console.log(busMaxCapacity);
 		})
 	})
+
+	$("updateLoad").on('click', function(){
+
+		var peopleGettingOff = $("#numberOfPeopleGettingOff").val();
+		var peopleGettingOn = $("#numberOfPeopleGettingOn").val();
+		event.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "script.php",
+			data: {peopleGettingOn,peopleGettingOff}
+		})
+		.done(function(response){
+			$("#newAmount").html(response);
+			console.log(peopleGettingOff,peopleGettingOn);
+
+	}
 
 
 	// $("#busForm").on("submit", function(event){
