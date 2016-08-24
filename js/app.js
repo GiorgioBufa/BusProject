@@ -25,7 +25,12 @@ $(function(){
 		})
 	});
 
-
+<<<<<<< HEAD
+	// $("#updateLoad").on('click', function(){
+	// 	var peopleGettingOff = $("#numberOfPeopleGettingOff").val();
+	// 	var peopleGettingOn = $("#numberOfPeopleGettingOn").val();
+	// 	event.preventDefault();
+=======
 	$("updateLoad").on('click', function(){
 
 		var peopleGettingOff = $("#numberOfPeopleGettingOff").val();
@@ -41,6 +46,38 @@ $(function(){
 			console.log(peopleGettingOff,peopleGettingOn);
 
 	}
+
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
+	$("updateLoad").on('click', function(){
+
+		var peopleGettingOff = $("#numberOfPeopleGettingOff").val();
+		var peopleGettingOn = $("#numberOfPeopleGettingOn").val();
+		event.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "script.php",
+			data: {peopleGettingOn,peopleGettingOff}
+		})
+		.done(function(response){
+			$("#newAmount").html(response);
+			console.log(peopleGettingOff,peopleGettingOn);
+
+	}
+
+>>>>>>> origin/master
+
+	// 	$.ajax({
+	// 		type: "POST",
+	// 		url: "process.php",
+	// 		data: {peopleGettingOn, peopleGettingOff}
+	// 	})
+	// 	.done(function(response){
+	// 		$("#newAmount").html(response);
+	// 	})
+	// });
+
 
 
 	$("#getOnBus").on('click', function(){
